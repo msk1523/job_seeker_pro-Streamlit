@@ -13,8 +13,8 @@ def app():
             st.session_state['redirect_to_auth'] = True
             st.rerun()
     elif 'redirect_to_auth' in st.session_state and st.session_state['redirect_to_auth']:
-        from pages import auth
-        auth.app()
+        from pages import authh
+        authh.app()
     else:
         try:
             # Verify the existing token
